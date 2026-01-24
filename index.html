@@ -118,7 +118,7 @@
         <option>Khoa Sản</option>
     </select>
 
-    <button onclick="datLich()">Đặt Lịch Khám</button>
+    <button id="btnDatLich">Đặt Lịch Khám</button>
 
     <div id="thongbao" class="message"></div>
 </div>
@@ -214,9 +214,13 @@ function datLich() {
     thongbao.textContent = "Đặt lịch khám thành công";
     thongbao.className = "message success";
 }
+    document.getElementById("btnDatLich")
+  .addEventListener("click", datLich);
+
 </script>
 
 </body>
 </html>
+
 
 
