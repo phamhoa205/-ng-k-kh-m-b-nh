@@ -137,7 +137,7 @@ function datLich() {
     // Regex giữ nguyên logic
     const hotenRegex = /^[A-Za-zÀ-ỹ]+(\s[A-Za-zÀ-ỹ]+)+$/;
     const sdtRegex = /^(\+84[0-9]{9}|0[0-9]{9})$/;
-    const quequanRegex = /^[A-Za-zÀ-ỹ]+(\s[A-Za-zÀ-ỹ]+)*\s-\s[A-Za-zÀ-ỹ]+(\s[A-Za-zÀ-ỹ]+)*(\s[0-9]+)?$/;
+    const quequanRegex = /^[\p{L}\s]+ - [\p{L}\s]+$/u;
 
     const namHienTai = new Date().getFullYear();
 
@@ -218,4 +218,5 @@ function datLich() {
 
 </body>
 </html>
+
 
